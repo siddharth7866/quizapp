@@ -2,6 +2,7 @@ import { useState } from "react";
 
 function DateCounter() {
   const [count, setCount] = useState(0);
+
   const [step, setStep] = useState(1);
 
   // This mutates the date object.

@@ -1,3 +1,6 @@
+import Datecounter from "./DateCounter";
+import Sid from "./Sid";
+
 export default function App() {
   return (
     <div>
@@ -9,7 +12,7 @@ export default function App() {
 function Hello() {
   return (
     <div>
-      <h1>Hello Siddharth</h1>
+      <Sid />
     </div>
   );
 }
