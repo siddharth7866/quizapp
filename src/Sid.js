@@ -3,6 +3,8 @@ import { useState } from "react";
 export default function Counter() {
   const [number, setnumber] = useState(0);
 
+  console.log(useState);
+
   function handleAdd() {
     setnumber((number) => number + 1);
   }
@@ -18,7 +20,11 @@ export default function Counter() {
 
   return (
     <div>
-      {number < 1 ? `At level zero` : `${number}`}
+      {number < 1
+        ? `At level zero`
+        : number === 6
+        ? ` Its my birthday`
+        : `${number}`}
       <button className="adds" onClick={handleAdd}>
         Add
       </button>
